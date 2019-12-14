@@ -1,0 +1,14 @@
+.sale-wrap {
+    width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.sale {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

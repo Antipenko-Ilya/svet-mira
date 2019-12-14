@@ -1,0 +1,15 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer-wrap {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: #4B648B;
+    color: #fff;
+}
+.footer-title {
+    color: #fff;
+}

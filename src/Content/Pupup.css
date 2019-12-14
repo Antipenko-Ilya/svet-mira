@@ -1,0 +1,48 @@
+.pupup-wrap {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 100px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.pupup-information {
+    display: flex;
+}
+.pupup-title {
+    background-color:#4B648B;
+    color: #fff;
+    padding-left: 25px;
+    margin-bottom: 5px;
+}
+.pupup-img {
+    display: block;
+    width: 392px;
+    height: 376px;
+    margin-right: 60px;
+
+}
+.pupup-description {
+    margin-right: 60px;
+}
+.pupup-btn {
+    width: 156px;
+    text-align: right;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4B648B;
+    border: 1px solid #4B648B;
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+    font-size: 24px;
+}
+.pupup-btn::before{
+    content: '';
+    background-image: url('../image/cart-button.png');
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

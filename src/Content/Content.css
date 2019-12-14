@@ -1,0 +1,11 @@
+.content-wrap {
+    display: flex;
+}
+.goods{
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #e6e6e6;
+}

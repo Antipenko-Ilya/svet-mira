@@ -1,0 +1,29 @@
+.card {
+    margin-bottom: 35px;
+}
+.card-img {
+    width: 230px;
+    height: 168px;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.card-description {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.button-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.card-button {
+    height: 25px;
+    text-decoration: none;
+    background-color: #4B648B;
+    color: #fff;
+    border: 1px solid #4B648B;
+    border-radius: 3px;
+    cursor: pointer;
+}

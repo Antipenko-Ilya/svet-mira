@@ -1,0 +1,113 @@
+.cart-title {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 120%;
+    text-align: center;
+    margin: 20px 20px;
+}
+.cart-header {
+   display: flex;
+   height: 50px;
+   font-size: 22px;
+   color: #fff;
+   background-color: #4B648B;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.cart-footer {
+    padding-left: 188px;
+    height: 50px;
+    font-size: 22px;
+    color: #fff;
+    background-color: #4B648B;
+}
+.cart-container {
+    background: url('../image/background.png');
+}
+.cart-content {
+    width: 87%;
+    margin: 0 auto;
+    padding-top: 14px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.order-registration {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+}
+.delivery {
+    margin-right: 70px;
+}
+.delivery-block{
+    display: flex;
+    align-items: flex-start;
+}
+
+.delivery-group {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+.cart-radio {
+    cursor: pointer;
+}
+.delivery_title {
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 33px;
+}
+.delivery-description {
+    font-weight: 500;
+    font-size: 22px;
+}
+.delivery-description_text{
+    font-size: 20px;
+    padding-left: 63px;
+}
+.cart-form_title {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 33px;
+    margin-bottom: 33px;
+}
+.inputs {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.cart-input-form {
+    border: 2px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 40px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.cart-input-textarea {
+    border: 2px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 20px;
+}
+.cart-btn {
+    margin-top: 30px;
+    width: 250px;
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #4B648B;
+    background-color: #4B648B;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.cart-radio {
+    background: #4B648B;
+    text-decoration: none;
+}

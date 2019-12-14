@@ -1,0 +1,16 @@
+.supplier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 55px;
+}
+.supplier-img_wrap {
+    display: flex;
+    margin-top: 20px;
+    width: 60%;
+    justify-content: space-evenly;
+}
+.supplier-img {
+    cursor: pointer;
+}
