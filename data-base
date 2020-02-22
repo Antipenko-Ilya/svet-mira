@@ -1,0 +1,242 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 12.1
+-- Dumped by pg_dump version 12.1
+
+-- Started on 2019-12-15 14:51:35
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- TOC entry 203 (class 1259 OID 32780)
+-- Name: goods; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.goods (
+    id bigint NOT NULL,
+    "Name" character varying(500),
+    article character varying(500),
+    image character varying(800),
+    brand character varying(500),
+    type character varying(500),
+    amount bigint,
+    sale boolean,
+    price bigint,
+    height bigint,
+    diameter bigint,
+    "сap_type" character varying,
+    amount_of_lamps bigint,
+    lamp_power bigint,
+    lighting_area bigint,
+    material character varying,
+    color character varying(500),
+    createdat date,
+    updatedat date
+);
+
+
+ALTER TABLE public.goods OWNER TO postgres;
+
+--
+-- TOC entry 2819 (class 0 OID 32780)
+-- Dependencies: 203
+-- Data for Name: goods; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.goods (id, "Name", article, image, brand, type, amount, sale, price, height, diameter, "сap_type", amount_of_lamps, lamp_power, lighting_area, material, color, createdat, updatedat) FROM stdin;
+49	Бра Elite Bohemia	N 120/2/02-7	\N	Elit Bohemia	sconce 	\N	\N	7257	270	360	Е14	2	40	4	Латунь	Золото	\N	\N
+5	Люстра подвесная Preciosa AB	15 0952 006 07 01 05 22	\N	preciosa	chandelier	\N	\N	28293	380	570	E14	6	40	12	Латунь	Золото	\N	\N
+107	Люстра подвесная Elit Bohemia 	L 713/1/05-1 Smoke	\N	Elit Bohemia 	chandelier	\N	t	4371	200	200	Е14	1	40	2	Латунь	Золото	\N	\N
+1071	Люстра подвесная Elit Bohemia 	L 713/1/05-2 Amber 	\N	Elit Bohemia 	chandelier	\N	t	4371	200	200	Е14	1	40	2	Латунь	Золото	\N	\N
+7	Люстра подвесная Preciosa АВ	15 0590 006 07 01 02 01	\N	preciosa	chandelier	\N	\N	23646	490	500	E14	6	40	12	Латунь	Золото	\N	\N
+1072	Люстра подвесная Elit Bohemia 	L 713/1/05-3 Aqua	\N	Elit Bohemia 	chandelier	\N	t	4371	200	200	Е14	1	40	2	Латунь	Золото	\N	\N
+1073	Люстра подвесная Elit Bohemia 	L 713/1/05-4 Rosalin	\N	Elit Bohemia 	chandelier	\N	t	4371	200	200	Е14	1	40	2	Латунь	Золото	\N	\N
+1074	Люстра подвесная Elit Bohemia 	L 713/1/05-5 Green	\N	Elit Bohemia 	chandelier	\N	t	4371	200	200	Е14	1	40	2	Латунь	Золото	\N	\N
+1075	Люстра подвесная Elit Bohemia 	L 713/1/05-6 Yellow	\N	Elit Bohemia 	chandelier	\N	t	4371	200	200	Е14	1	40	2	Латунь	Золото	\N	\N
+1076	Люстра подвесная Elit Bohemia 	L 713/1/05-7 Red	\N	Elit Bohemia 	chandelier	\N	t	4371	200	200	Е14	1	40	2	Латунь	Золото	\N	\N
+61	Люстра подвесная Elit Bohemia	L103/8/02 	\N	Elit Bohemia	sconce 	\N	\N	35060	450	700	Е14	8	40	16	Латунь	Золото	\N	\N
+15	Люстра потолочная Preciosa CB	45 0746 006 15 00 01 01	\N	preciosa	chandelier	\N	\N	35630	360	530	E14	6	40	12	Латунь	Золото	\N	\N
+14	Люстра потолочная Preciosa CB	45 0704 009 04 00 02 01	\N	preciosa	chandelier	\N	\N	25443	310	610	E14	9	40	12	Никель	Никель	\N	\N
+9	Люстра подвесная Preciosa AL	65 5010 009 85 24 00 28	\N	preciosa	chandelier	\N	\N	217685	830	750	E14	9	40	18	Латунь	Золото	\N	\N
+10	Люстра потолочная Preciosa CB	45 1030 008 15 70 00 22	\N	preciosa	chandelier	\N	\N	58376	450	600	E14	8	40	16	Латунь	Золото	\N	\N
+4	Люстра подвесная Preciosa ВВ	45 0506 001 07 00 07 01	\N	preciosa	chandelier	\N	\N	14667	380	360	E27	1	60	3	Латунь	Золото	\N	\N
+108	Люстра подвесная Elit Bohemia 	L 704/6/07	\N	Elit Bohemia 	chandelier	\N	t	14195	300	450	Е14	6	40	12	Латунь	Золото	\N	\N
+6	Люстра подвесная Preciosa AB	15 0798 008 07 01 03 22	\N	preciosa	chandelier	\N	\N	26091	480	540	E14	8	40	16	Латунь	Золото	\N	\N
+8	Люстра подвесная Preciosa CA	45 3581 006 07 00 00 40	\N	preciosa	chandelier	\N	\N	21363	310	400	E14	6	40	12	Латунь	Золото	\N	\N
+109	Люстра подвесная Elit Bohemia 	L 703/3/05	\N	Elit Bohemia 	chandelier	\N	t	8582	420	250	Е14	3	40	6	Латунь	Золото	\N	\N
+11	Люстра потолочная Preciosa CB	45 1054 011 07 00 01 35	\N	preciosa	chandelier	\N	\N	34569	310	700	E14	11	40	22	Латунь	Золото	\N	\N
+25	Каскад Preciosa CB	59 1099 009 04 00 00 35		preciosa	chandelier	\N	\N	56501	760	500	E14	9	40	18	Латунь	Никель	\N	\N
+23	Люстра потолочная Preciosa CА	45 3757 003 07 00 22 40	\N	preciosa	chandelier	\N	\N	10764	260	280	E14	3	40	6	Латунь	Золото	\N	\N
+16	Люстра потолочная Preciosa CB	45 0991 006 04 70 07 35	\N	preciosa	chandelier	\N	\N	21445	400	500	E14	6	40	12	Никель	Никель	\N	\N
+12	Люстра потолочная Preciosa CB	45 1183 006 07 00 00 35	\N	preciosa	chandelier	\N	\N	28373	380	530	E14	6	40	12	Латунь	Золото	\N	\N
+1111	Бра Preciosa	25 1085 002 07 82 00 35	\N	preciosa	sconce 	\N	t	5574	300	380	Е14	2	40	4	Латунь	Голубой	\N	\N
+113	Бра Preciosa	22 3121 002 07 01 01 40	\N	preciosa	sconce 	\N	t	3970	360	260	Е14	2	40	4	Латунь	Хром	\N	\N
+111	Бра Preciosa	25 1085 002 07 81 00 35	\N	preciosa	sconce 	\N	t	5574	300	380	Е14	2	40	4	Латунь	Голубой с золотом	\N	\N
+112	Бра Preciosa	25 1085 002 07 84 00 35	\N	preciosa	sconce 	\N	t	5574	300	380	Е14	2	40	4	Латунь	Розовый	\N	\N
+110	Люстра подвесная Elit Bohemia 	L 703/6/05	\N	Elit Bohemia 	chandelier	\N	t	12150	350	480	Е14	6	40	12	Латунь	Золото	\N	\N
+62	Люстра подвесная Elit Bohemia 	L112/12/07	\N	Elit Bohemia	chandelier	\N	\N	46473	650	670	Е14	12	40	24	Латунь	Золото	\N	\N
+501	Бра Elite Bohemia	N 120/2/62 ametyst	\N	Elit Bohemia	sconce	\N	\N	7014	270	360	Е14	2	40	4	Латунь	Золото	\N	\N
+56	Бра Elite Bohemia	N 529/2/31	\N	Elit Bohemia	sconce 	\N	\N	14596	200	360	Е14	2	40	4	Латунь	Белый	\N	\N
+41	Настольная лампа Preciosa TB	35 0371 001 07 00 00 01	\N	preciosa	lamp	\N	\N	7014	170	160	E14	1	40	2	Латунь	Золото	\N	\N
+119	Светильник  Preciosa	32 7047 001 06 05 00 00	\N	preciosa	lamp	\N	t	8000	500	300	E27	1	60	2	Никель	Чёрный	\N	\N
+504	Бра Elite Bohemia	N 120/2/62 rubin	\N	Elit Bohemia	sconce 	\N	\N	7014	270	360	Е14	2	40	4	Латунь	Золото	\N	\N
+1224	Бра Elite Bohemia	N 716/1/05-6 Yellow	\N	Elit Bohemia 	sconce 	\N	t	4010	240	210	Е14	1	40	2	Латунь	Золото	\N	\N
+1221	Бра Elite Bohemia	N 716/1/05-3 Aqua	\N	Elit Bohemia 	sconce 	\N	t	4010	240	210	Е14	1	40	2	Латунь	Золото	\N	\N
+503	Бра Elite Bohemia	N 120/2/62 olivin	\N	Elit Bohemia	sconce 	\N	\N	7014	270	360	Е14	2	40	4	Латунь	Золото	\N	\N
+502	Бра Elite Bohemia	N 120/2/62 aqua	\N	Elit Bohemia	sconce 	\N	\N	7014	270	360	Е14	2	40	4	Латунь	Золото	\N	\N
+1222	Бра Elite Bohemia	N 716/1/05-4 Rosalin	\N	Elit Bohemia 	sconce 	\N	t	4010	240	210	Е14	1	40	2	Латунь	Золото	\N	\N
+63	Люстра подвесная Elit Bohemia 	L 130/10/01 	\N	Elit Bohemia	chandelier	\N	\N	37099	520	610	Е14	10	40	20	Латунь	Золото	\N	\N
+64	Люстра подвесная Elit Bohemia 	L 130/6/01N 	\N	Elit Bohemia	chandelier	\N	\N	29597	550	610	Е14	6	40	12	Никель	Золото	\N	\N
+65	Люстра подвесная Elit Bohemia 	L 130/6/01	\N	Elit Bohemia	chandelier	\N	\N	28537	550	610	Е14	6	40	12	Латунь\r\n	Золото	\N	\N
+66	Люстра подвесная Elit Bohemia 	L 131/8/02N	\N	Elit Bohemia	chandelier	\N	\N	33185	450	580	Е14	8	40	16	Никель	Золото	\N	\N
+67	Люстра подвесная Elit Bohemia 	L 210/6/03	\N	Elit Bohemia	chandelier	\N	\N	26581	490	630	Е14	6	40	12	Латунь	Золото	\N	\N
+68	Люстра подвесная Elit Bohemia 	L 210/6/03  Black	\N	Elit Bohemia	chandelier	\N	\N	29761	490	630	Е14	6	40	12	Латунь	Золото	\N	\N
+69	Люстра подвесная Elit Bohemia 	L 210/6/03 N  Black	\N	Elit Bohemia	chandelier	\N	\N	30657	490	630	Е14	6	40	12	Никель	Золото	\N	\N
+70	Люстра подвесная Elit Bohemia 	L 210/6/03 N  Green	\N	Elit Bohemia	chandelier	\N	\N	30657	490	630	Е14	6	40	12	Никель	Зелёный\r\n\r\n	\N	\N
+71	Люстра подвесная Elit Bohemia 	L 210/8/03	\N	Elit Bohemia	chandelier	\N	\N	33999	490	630	Е14	8	40	16	Латунь	Золото	\N	\N
+72	Люстра подвесная Elit Bohemia 	L 210/8/03 N Black	\N	Elit Bohemia	chandelier	\N	\N	37180	490	630	Е14	8	40	16	Латунь	Золото	\N	\N
+73	Люстра подвесная Elit Bohemia 	L 341/1/05	\N	Elit Bohemia	chandelier	\N	\N	12884	570	350	Е14	1	40	2	Латунь	Золото	\N	\N
+74	Люстра подвесная Elit Bohemia 	L 533/8/07	\N	Elit Bohemia	chandelier	\N	\N	41826	480	580	Е14	8	40	16	Латунь	Золото	\N	\N
+75	Люстра подвесная Elit Bohemia 	L 630/8/95	\N	Elit Bohemia	chandelier	\N	\N	44517	550	600	Е14	8	40	16	Латунь	Золото	\N	\N
+76	Люстра подвесная Elit Bohemia 	L 700/1/05 Pt	\N	Elit Bohemia	chandelier	\N	\N	13698	620	300	Е14	1	40	2	Латунь	Золото	\N	\N
+77	Люстра подвесная Elit Bohemia 	L 702/6/05	\N	Elit Bohemia	chandelier	\N	\N	31473	370	500	Е14	6	40	12	Латунь	Золото	\N	\N
+78	Люстра подвесная Elit Bohemia 	L 706/6/05	\N	Elit Bohemia	chandelier	\N	\N	25538	250	450	Е14	6	40	12	Латунь	Золото	\N	\N
+79	Люстра подвесная Elit Bohemia 	L 708/6/07	\N	Elit Bohemia	chandelier	\N	\N	29923	250	450	Е14	6	40	12	Латунь	Золото	\N	\N
+80	Люстра подвесная Elit Bohemia 	L 710/3/05	\N	Elit Bohemia	chandelier	\N	\N	16633	340	300	Е14	3	40	6	Латунь	Золото	\N	\N
+81	Люстра подвесная Elit Bohemia 	L 710/3/05 N	\N	Elit Bohemia	chandelier	\N	\N	16145	340	300	Е14	3	40	6	Латунь	Никель	\N	\N
+82	Люстра подвесная Elit Bohemia 	L 713/1/05	\N	Elit Bohemia	chandelier	\N	\N	8563	200	200	Е14	1	40	2	Латунь	Золото	\N	\N
+83	Люстра подвесная Elit Bohemia 	L 714/6/05	\N	Elit Bohemia	chandelier	\N	\N	23727	350	450	Е14	6	40	12	Латунь	Золото	\N	\N
+84	Люстра подвесная Elit Bohemia 	L 714/6/05N	\N	Elit Bohemia	chandelier	\N	\N	24461	350	450	Е14	6	40	12	Латунь	Никель	\N	\N
+85	Люстра подвесная Elit Bohemia 	L 715/9/05	\N	Elit Bohemia	chandelier	\N	\N	35222	280	500	Е14	9	40	18	Латунь	Золото	\N	\N
+86	Люстра подвесная Elit Bohemia 	L 715/9/05 N	\N	Elit Bohemia	chandelier	\N	\N	36120	280	500	Е14	9	40	18	Никель	Латунь	\N	\N
+87	Люстра подвесная Elit Bohemia 	L 716/6/05	\N	Elit Bohemia	chandelier	\N	\N	26908	400	400	Е14	6	40	12	Латунь	Золото	\N	\N
+88	Люстра подвесная Elit Bohemia 	L 718/9/05-4 Rosalin	\N	Elit Bohemia	chandelier	\N	\N	39625	300	500	Е14	9	40	18	Латунь	Золото	\N	\N
+89	Люстра подвесная Elit Bohemia 	L 723/2/05	\N	Elit Bohemia	chandelier	\N	\N	15084	540	330	Е14	2	40	4	Латунь	Золото	\N	\N
+90	Люстра подвесная Elit Bohemia 	L 723/3/05	\N	Elit Bohemia	chandelier	\N	\N	19242	300	500	Е14	3	40	6	Латунь	Золото	\N	\N
+91	Люстра подвесная Preciosa	15 1085 005 07 82 00 35	\N	preciosa	chandelier	\N	t	15718	540	520	Е14	5	40	10	Латунь	Голубой	\N	\N
+92	Люстра подвесная Preciosa	15 1085 005 07 81 01 35	\N	preciosa	chandelier	\N	t	15718	540	520	Е14	5	40	10	Латунь	Золото	\N	\N
+941	Люстра подвесная Preciosa	15 1085 008 07 84 00 35	\N	preciosa	chandelier	\N	t	21492	540	520	Е14	8	40	16	Латунь	Розовый	\N	\N
+98	Люстра подвесная Preciosa	55 1081 009 07 00 00 35	\N	preciosa	chandelier	\N	t	31596	440	740	Е14	9	40	18	Латунь	Золото	\N	\N
+93	Люстра подвесная Preciosa	15 1085 008 07 81 00 35	\N	preciosa	chandelier	\N	t	21492	540	520	Е14	8	40	16	Латунь	Голубой с золотом	\N	\N
+95	Люстра подвесная Preciosa	15 1085 012 07 81 00 35	\N	preciosa	chandelier	\N	t	29070	620	640	Е14	12	40	24	Латунь	Голубой с золотом	\N	\N
+94	Люстра подвесная Preciosa	15 1085 008 07 83 00 35	\N	preciosa	chandelier	\N	t	21492	540	520	Е14	8	40	16	Латунь	Розовый с золотом	\N	\N
+931	Люстра подвесная Preciosa	15 1085 008 07 82 00 35	\N	preciosa	chandelier	\N	t	21492	540	520	Е14	8	40	16	Латунь	Голубой	\N	\N
+44	Бра Elite Bohemia	N 100/2/02 Mat	\N	Elit Bohemia	sconce 	\N	\N	6361	450	600	Е14	2	40	4	Латунь	Золото	\N	\N
+47	Бра Elite Bohemia	N 120/2/01	\N	Elit Bohemia	sconce 	\N	\N	6770	270	360	Е14	2	40	4	Латунь	Золото	\N	\N
+46	Бра Elite Bohemia	N 112/2/07	\N	Elit Bohemia	sconce 	\N	\N	6932	240	370	Е14	2	40	4	Латунь	Золото	\N	\N
+40	Бра Preciosa WN	26 3853 002 99 00 00 40	\N	preciosa	sconce 	\N	\N	15084	330	170	E14	2	40	4	Латунь	Золото	\N	\N
+36	Бра Preciosa WB	25 0972 002 07 11 00 01	\N	preciosa	sconce 	\N	\N	10764	390	130	E14	2	40	4	Латунь	Золото	\N	\N
+39	Бра Preciosa WN	26 3027 002 85 00 00 40	\N	preciosa	sconce 	\N	\N	15330	180	150	E14	2	40	4	Латунь	Золото	\N	\N
+28	Бра Preciosa WN	 26 3302 002 80 00 00 40	\N	preciosa	sconce 	\N	\N	12719	300	210	E14	2	40	4	Никель	Никель	\N	\N
+601	Бра Elite Bohemia	N 710/2/05 N	\N	Elit Bohemia	sconce 	\N	\N	9296	210	240	Е14	2	40	4	Латунь	Никель	\N	\N
+37	Бра Preciosa WB	25 1081 002 07 00 01 35	\N	preciosa	sconce 	\N	\N	15819	270	150	E14	2	40	4	Латунь	Золото	\N	\N
+453	Бра Elite Bohemia	N 104/2/02-4 Rosalin	\N	Elit Bohemia	sconce 	\N	\N	6770	240	350	Е14	2	40	4	Латунь	Золото	\N	\N
+452	Бра Elite Bohemia	N 104/2/02-3 Aqua	\N	Elit Bohemia	sconce 	\N	\N	6770	240	350	Е14	2	40	4	Латунь	Золото	\N	\N
+455	Бра Elite Bohemia	N 104/2/02-6 Yellow	\N	Elit Bohemia	sconce 	\N	\N	6770	240	350	Е14	2	40	4	Латунь	Золото	\N	\N
+454	Бра Elite Bohemia	N 104/2/02-5 Green	\N	Elit Bohemia	sconce 	\N	\N	6770	240	350	Е14	2	40	4	Латунь	Золото	\N	\N
+451	Бра Elite Bohemia	N 104/2/02-2 Amber	\N	Elit Bohemia	sconce 	\N	\N	6770	240	350	Е14	2	40	4	Латунь	Золото	\N	\N
+105	Люстра подвесная Elit Bohemia 	L 716/9/05-2 Amber	\N	Elit Bohemia 	chandelier	\N	t	20770	300	500	Е14	9	40	18	Латунь	Золото	\N	\N
+1053	Люстра подвесная Elit Bohemia 	L 716/9/05-7 Red	\N	Elit Bohemia 	chandelier	\N	t	20770	300	500	Е14	9	40	18	Латунь	Золото	\N	\N
+1052	Люстра подвесная Elit Bohemia 	L 716/9/05-5 Green	\N	Elit Bohemia 	chandelier	\N	t	20770	300	500	Е14	9	40	18	Латунь	Золото	\N	\N
+1051	Люстра подвесная Elit Bohemia 	L 716/9/05-3 Aqua	\N	Elit Bohemia 	chandelier	\N	t	20770	300	500	Е14	9	40	18	Латунь	Золото	\N	\N
+106	Люстра подвесная Elit Bohemia 	L 716/6/05-2 Amber\r\n	\N	Elit Bohemia 	chandelier	\N	t	16560	350	450	Е14	6	40	12	Латунь/Никель	Золото	\N	\N
+1061	Люстра подвесная Elit Bohemia 	L 716/6/05-3 Aqua	\N	Elit Bohemia 	chandelier	\N	t	16560	350	450	Е14	6	40	12	Латунь/Никель	Золото	\N	\N
+1062	Люстра подвесная Elit Bohemia 	L 716/6/05-4 Rosalin 	\N	Elit Bohemia 	chandelier	\N	t	16560	350	450	Е14	6	40	12	Латунь/Никель	Золото	\N	\N
+1063	Люстра подвесная Elit Bohemia 	L 716/6/05-5 Green	\N	Elit Bohemia 	chandelier	\N	t	16560	350	450	Е14	6	40	12	Латунь/Никель	Золото	\N	\N
+1064	Люстра подвесная Elit Bohemia 	L 716/6/05-6N Yellow	\N	Elit Bohemia 	chandelier	\N	t	16560	350	450	Е14	6	40	12	Латунь/Никель	Золото	\N	\N
+1065	Люстра подвесная Elit Bohemia 	L 716/6/05-6 Yellow	\N	Elit Bohemia 	chandelier	\N	t	16560	350	450	Е14	6	40	12	Латунь/Никель	Золото	\N	\N
+1066	Люстра подвесная Elit Bohemia 	L 716/6/05-7 Red	\N	Elit Bohemia 	chandelier	\N	t	16560	350	450	Е14	6	40	12	Латунь/Никель	Золото	\N	\N
+1	Люстра подвесная Preciosa BB	45 0915 006 07 00 07 01	http://www.brilux.com.ua/wp-content/uploads/2016/02/hrust_lustra_4.jpg	preciosa	chandelier	6	\N	33021	480	500	E14	6	40	12	Латунь	Золото	\N	\N
+3	Люстра подвесная Preciosa ВВ	45 0516 006 07 11 17 01	\N	preciosa	chandelier	\N	\N	34081	610	500	E14	6	40	12	Латунь	Золото	\N	\N
+2	Люстра подвесная Preciosa BA	45 3487 003 07 00 04 40	http://www.brilux.com.ua/wp-content/uploads/2016/02/hrust_lustra_4.jpg	preciosa	chandelier	7	\N	23156	450	440	E27	3	60	9	Латунь	Золото	\N	\N
+961	Люстра подвесная Preciosa	15 1085 012 07 84 00 35	\N	preciosa	chandelier	\N	t	29070	620	640	Е14	12	40	24	Латунь	Розовый	\N	\N
+951	Люстра подвесная Preciosa	15 1085 012 07 82 00 35	\N	preciosa	chandelier	\N	t	29070	620	640	Е14	12	40	24	Латунь	Голубой	\N	\N
+104	Люстра подвесная Preciosa	45 0969 006 04 00 06 35	\N	preciosa	chandelier	\N	t	15000	400	510	Е14	6	40	12	Никель	Золото	\N	\N
+101	Люстра подвесная Preciosa	45 0991 004 90 70 04 01	\N	preciosa	chandelier	\N	t	8742	340	400	Е14	4	40	8	Никель	Золото	\N	\N
+100	Люстра подвесная Preciosa	45 1191 001 07 00 00 35 	\N	preciosa	chandelier	\N	t	3850	240	200	Е14	10	100	20	Латунь	Золото	\N	\N
+103	Люстра подвесная Preciosa	45 0969 006 07 00 00 22	\N	preciosa	chandelier	\N	t	17642	400	510	Е14	6	40	12	Латунь	Золото	\N	\N
+102	Люстра подвесная Preciosa	45 0991 004 04 70 04 01	\N	preciosa	chandelier	\N	t	9183	340	400	Е14	4	40	8	Никель	Золото	\N	\N
+97	Люстра подвесная Preciosa	45 0757 005 04 00 02 01	\N	preciosa	chandelier	\N	t	9503	410	375	Е14	5	40	10	Никель	Никель	\N	\N
+96	Люстра подвесная Preciosa	15 1085 012 07 83 00 35	\N	preciosa	chandelier	\N	t	29070	620	640	Е14	12	40	24	Латунь	Розовый с золотом	\N	\N
+99	Люстра подвесная Preciosa	55 0969 010 07 00 06 35	\N	preciosa	chandelier	\N	t	20000	470	570	Е14	10	40	20	Латунь	Золото	\N	\N
+24	Люстра потолочная Preciosa CА	45 3523 003 07 00 01 40	\N	preciosa	chandelier	\N	\N	16880	410	350	E14	3	40	6	Латунь	Золото	\N	\N
+27	Каскад Preciosa CB	45 0938 003 15 00 00 01	\N	preciosa	chandelier	\N	\N	114225	1070	250	Е27	3	60	9	Латунь	Золото	\N	\N
+26	Каскад Preciosa CB	45 0938 002 15 00 01 01	\N	preciosa	chandelier	\N	\N	77781	770	250	Е27	2	60	6	Латунь	Золото	\N	\N
+21	Люстра потолочная Preciosa CB	45 0524 003 04 00 01 01	\N	preciosa	chandelier	\N	\N	17450	310	330	E14	3	40	6	Латунь	Никель	\N	\N
+20	Люстра потолочная Preciosa CB	45 0524 006 04 00 07 01	\N	preciosa	chandelier	\N	\N	23727	280	430	E14	6	40	12	Никель	Никель	\N	\N
+22	Люстра потолочная Preciosa CB	55 0524 012 04 00 01 35	\N	preciosa	chandelier	\N	\N	82021	420	810	E14	12	40	24	Латунь	Никель	\N	\N
+17	Люстра потолочная Preciosa CB	45 0914 004 04 00 10 01	\N	preciosa	chandelier	\N	\N	29434	450	430	E14	4	40	8	Никель	Никель	\N	\N
+19	Люстра потолочная Preciosa CB	45 0524 009 04 00 10 01	\N	preciosa	chandelier	\N	\N	31555	330	480	E14	9	40	18	Никель	Никель	\N	\N
+18	Люстра потолочная Preciosa CB	45 0757 006 04 00 05 01	\N	preciosa	chandelier	\N	\N	26662	420	480	E14	6	40	12	Никель	Никель	\N	\N
+13	Люстра потолочная Preciosa CB	55 0914 004 07 00 00 35	\N	preciosa	chandelier	\N	\N	27070	450	430	E14	4	40	8	Латунь	Золото	\N	\N
+59	Бра Elite Bohemia	N 613/3/18	\N	Elit Bohemia	sconce 	\N	\N	18101	350	380	Е14	3	40	4	Латунь	Никель	\N	\N
+58	Бра Elite Bohemia	N 550/2/37	\N	Elit Bohemia	sconce 	\N	\N	14433	270	370	Е14	2	40	4	Латунь	Красный	\N	\N
+53	Бра Elite Bohemia	N 504/2/37	\N	Elit Bohemia	sconce 	\N	\N	13780	260	340	Е14	2	40	4	Латунь	Розовый	\N	\N
+52	Бра Elite Bohemia	N 504/2/35	\N	Elit Bohemia	sconce 	\N	\N	13780	270	360	Е14	2	40	4	Латунь	Салатовый	\N	\N
+55	Бра Elite Bohemia	N 520/2/37	\N	Elit Bohemia	sconce 	\N	\N	14840	260	340	Е14	2	40	4	Латунь	Красный	\N	\N
+54	Бра Elite Bohemia	N 520/1/33	\N	Elit Bohemia	sconce 	\N	\N	9785	180	130	Е14	1	40	2	Латунь	Синий	\N	\N
+48	Бра Elite Bohemia	N 120/2/02 N	\N	Elit Bohemia	sconce 	\N	\N	6932	270	360	Е14	2	40	4	Никель	Золото	\N	\N
+51	Бра Elite Bohemia	N 504/2/33	\N	Elit Bohemia	sconce 	\N	\N	13780	260	360	Е14	2	40	4	Латунь	Синий	\N	\N
+50	Бра Elite Bohemia	N 120/2/62 alex	\N	Elit Bohemia	sconce 	\N	\N	7014	270	360	Е14	2	40	4	Латунь	Золото	\N	\N
+45	Бра Elite Bohemia	N 104/2/02-1 Smoke	\N	Elit Bohemia	sconce 	\N	\N	6770	240	350	Е14	2	40	4	Латунь	Золото	\N	\N
+38	Бра Preciosa WB	25 1081 002 07 00 00 35	\N	preciosa	sconce 	\N	\N	12068	220	180	E14	2	40	4	Латунь	Золото	\N	\N
+33	Бра Preciosa WB	25 0664 002 07 00 03 01	\N	preciosa	sconce 	\N	\N	7993	240	140	E14	2	40	4	Латунь	Золото	\N	\N
+32	Бра Preciosa WB	25 0644 002 07 01 00 01	\N	preciosa	sconce 	\N	\N	6605	200	180	E14	2	40	4	Латунь	Золото	\N	\N
+35	Бра Preciosa WB	25 0916 002 07 00 04 35	\N	preciosa	sconce 	\N	\N	12231	250	100	E14	2	40	4	Латунь	Золото	\N	\N
+29	Бра Preciosa WB	25 0702 001 04 00 00 01	\N	preciosa	sconce 	\N	\N	3427	210	50	E14	2	40	2	Никель	Никель	\N	\N
+31	Бра Preciosa WB	25 0922 002 04 00 01 01	\N	preciosa	sconce 	\N	\N	12476	230	130	E14	2	40	4	Никель	Никель	\N	\N
+30	Бра Preciosa WB	25 1053 002 04 00 01 35	\N	preciosa	sconce 	\N	\N	12314	180	180	E14	2	40	4	Никель	Никель	\N	\N
+34	Бра Preciosa WB	25 0666 001 07 00 00 01	\N	preciosa	sconce 	\N	\N	7828	170	120	E14	1	40	2	Латунь	Золото	\N	\N
+1216	Бра Elite Bohemia	N 710/2/05-7 Red	\N	Elit Bohemia 	sconce 	\N	t	4732	210	240	Е14	2	40	4	Латунь	Золото	\N	\N
+1213	Бра Elite Bohemia	N 710/2/05-4 Rosalin	\N	Elit Bohemia 	sconce 	\N	t	4732	210	240	Е14	2	40	4	Латунь	Золото	\N	\N
+1212	Бра Elite Bohemia	N 710/2/05-3 Aqua	\N	Elit Bohemia 	sconce 	\N	t	4732	210	240	Е14	2	40	4	Латунь	Золото	\N	\N
+1215	Бра Elite Bohemia	N 710/2/05-6 Yellow	\N	Elit Bohemia 	sconce 	\N	t	4732	210	240	Е14	2	40	4	Латунь	Золото	\N	\N
+1214	Бра Elite Bohemia	N 710/2/05-5 Green	\N	Elit Bohemia 	sconce 	\N	t	4732	210	240	Е14	2	40	4	Латунь	Золото	\N	\N
+1211	Бра Elite Bohemia	N 710/2/05-2 Amber	\N	Elit Bohemia 	sconce 	\N	t	4732	210	240	Е14	2	40	4	Латунь	Золото	\N	\N
+121	Бра Elite Bohemia	N 710/2/05-1 Smoke	\N	Elit Bohemia 	sconce 	\N	t	4732	210	240	Е14	2	40	4	Латунь	Золото	\N	\N
+120	Бра Preciosa	N 401/2/03 N	\N	preciosa	sconce 	\N	t	4500	300	450	Е14	2	40	4	Никель	Золото	\N	\N
+122	Бра Elite Bohemia	N 716/1/05-2 Amber	\N	Elit Bohemia 	sconce 	\N	t	4010	240	210	Е14	1	40	2	Латунь	Золото	\N	\N
+117	Бра Preciosa	25 1187 001 07 00 01 35	\N	preciosa	sconce 	\N	t	5053	270	330	Е14	1	40	2	Латунь	Золото	\N	\N
+43	Настольная лампа Preciosa TA	35 3373 001 07 00 00 40	\N	preciosa	lamp	\N	\N	20141	500	300	E27	1	60	2	Латунь	Латунь	\N	\N
+42	Настольная лампа Preciosa TA	35 3373 001 07 00 00 40	\N	preciosa	lamp	\N	\N	7014	370	140	E14	1	40	2	Латунь	Золото	\N	\N
+118	Бра Preciosa	23 3203 002 07 15 00 40	\N	preciosa	sconce 	\N	t	4000	340	410	Е14	2	40	4	Латунь	Красный	\N	\N
+115	Бра Preciosa	25 0480 001 15 00 00 01	\N	preciosa	sconce 	\N	t	3000	190	190	Е14	1	40	2	Латунь	Золото	\N	\N
+116	Бра Preciosa	25 1182 002 07 00 01 35	\N	preciosa	sconce 	\N	t	5774	270	330	Е14	2	40	4	Латунь	Золото	\N	\N
+114	Бра Preciosa	22 3719 002 07 11 01 40	\N	preciosa	sconce 	\N	t	4000	350	350	Е14	2	40	4	Латунь	Золото	\N	\N
+1223	Бра Elite Bohemia	N 716/1/05-5 Green	\N	Elit Bohemia 	sconce 	\N	t	4010	240	210	Е14	1	40	2	Латунь	Золото	\N	\N
+1225	Бра Elite Bohemia	N 716/1/05-7 Red	\N	Elit Bohemia 	sconce 	\N	t	4010	240	210	Е14	1	40	2	Латунь	Золото	\N	\N
+60	Бра Elite Bohemia	N 710/2/05\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n	\N	Elit Bohemia	sconce 	\N	\N	9214	210	240	Е14	2	40	4	Латунь	Никель	\N	\N
+57	Бра Elite Bohemia	N 529/2/35	\N	Elit Bohemia	sconce 	\N	\N	14433	200	360	Е14	2	40	4	Латунь	Зелёный	\N	\N
+\.
+
+
+--
+-- TOC entry 2692 (class 2606 OID 32787)
+-- Name: goods goods_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.goods
+    ADD CONSTRAINT goods_pk PRIMARY KEY (id);
+
+
+-- Completed on 2019-12-15 14:51:46
+
+--
+-- PostgreSQL database dump complete
+--
+

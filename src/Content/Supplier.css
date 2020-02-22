@@ -13,4 +13,8 @@
 }
 .supplier-img {
     cursor: pointer;
+    transition: .2s;
+}
+.supplier-img:hover {
+    transform: scale(1.1);
 }

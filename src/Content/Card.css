@@ -1,12 +1,19 @@
 .card {
     margin-bottom: 35px;
+    background-color: #fff;
+    border: 1px solid #9c9c9c;
+    font-size: 18px;
+    border-radius: 7px;
+}
+.card:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .card-img {
-    width: 230px;
-    height: 168px;
-    border: 1px solid #fff;
+    width: 253px;
+    height: 189px;
     border-radius: 7px;
     margin-bottom: 15px;
+    border: 1px solid #9c9c9c;
     cursor: pointer;
 }
 .card-description {
@@ -19,11 +26,11 @@
     justify-content: space-between;
 }
 .card-button {
-    height: 25px;
+    height: 35px;
     text-decoration: none;
     background-color: #4B648B;
     color: #fff;
     border: 1px solid #4B648B;
-    border-radius: 3px;
+    border-radius: 7px;
     cursor: pointer;
 }

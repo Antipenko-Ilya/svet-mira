@@ -1,4 +1,13 @@
 .sale-wrap {
+    width: 100%;
+    background: url('../image/background.png') no-repeat ;
+    background-size: cover;
+}
+.sale-title {
+    font-size: 35px;
+    color: #fff;
+}
+.sale {
     width: 1140px;
     display: flex;
     flex-direction: column;
@@ -6,8 +15,10 @@
     justify-content: center;
     margin: 0 auto;
     margin-bottom: 50px;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.7);
 }
-.sale {
+.sale-content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

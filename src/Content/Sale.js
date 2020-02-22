@@ -96,9 +96,11 @@ const saleCard = [
 export function Sale() {
     return(
         <div  className="sale-wrap">
-            <h2>Акционные товары</h2>
             <div className="sale">
-                { saleCard.map(card => <Card {...card} />) }
+                <h2 className="sale-title">Акционные товары</h2>
+                <div className="sale-content">
+                    { saleCard.map(card => <Card {...card} />) }
+                </div>
             </div>
         </div>
     );

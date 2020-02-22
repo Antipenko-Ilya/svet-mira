@@ -103,7 +103,7 @@ export function Content({ match }) {
     // ?priceFrom=30000&priceTo=40000&brand=Preciosa
 
     async function loadData(filters) {
-        const data = await fetch(`http://localhost:3366/goods/${queryString}`).then(r => r.json());
+        const data = await fetch(`http://5.101.51.45/goods`).then(r => r.json());
         setCards(data);
     }
 
