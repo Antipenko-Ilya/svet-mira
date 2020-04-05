@@ -1,9 +1,9 @@
 import React from 'react';
-import { Sale } from './Sale';
-import { Preview } from './Preview';
-import { Supplier } from './Supplier';
-import { Footer } from './Footer';
-import { Pupup } from './Pupup';
+import { Sale } from '../Sale/Sale';
+import { Preview } from '../Preview/Preview';
+import { Supplier } from '../Supplier/Supplier';
+import { Footer } from '../Footer/Footer';
+import { Pupup } from '../Modal/Pupup';
 import './General.css'
 
 

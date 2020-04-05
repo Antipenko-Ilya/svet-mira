@@ -2,12 +2,12 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
-import Header from './Header/Heder';
-import { Content } from './Content/Content';
-import { General } from './Content/General';
-import { Footer } from './Content/Footer';
-import { Pupup } from './Content/Pupup';
-import { Cart } from './Cart/Cart';
+import Header from './Components/Header/Heder';
+import { Content } from './Components/Content/Content';
+import { General } from './Components/General/General';
+import { Footer } from './Components/Footer/Footer';
+import { Pupup } from './Components/Modal/Pupup';
+import { Cart } from './Components/Cart/Cart';
 import { store } from "./store";
 
 function App() {

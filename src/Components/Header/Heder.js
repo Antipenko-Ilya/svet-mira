@@ -9,11 +9,11 @@ export default function Header(props) {
     return (
         <div className="header">
             <div className="header-information">
-                <img className="header-logo" src={require("../image/logo.png")} alt="logo"></img>
+                <img className="header-logo" src={require("../../image/logo.png")} alt="logo"></img>
                 <div className="header-time">График работы 9:00-20:00</div>
                 <div className="header-phone">+7 (926) 732-96-35</div>
                 <div className="header-card">
-                    <img className="card-logo" src={require("../image/card.png")} alt="card"></img>
+                    <img className="card-logo" src={require("../../image/card.png")} alt="card"></img>
                     <Link to="/cart" className="card-title">Корзина {count}</Link>
                 </div>
             </div>

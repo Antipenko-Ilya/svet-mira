@@ -22,7 +22,7 @@
     background-color: #4B648B;
 }
 .cart-container {
-    background: url('../image/background.png');
+    background: url('../../image/background.png');
 }
 .cart-content {
     width: 87%;

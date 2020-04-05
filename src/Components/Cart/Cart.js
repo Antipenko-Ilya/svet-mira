@@ -35,7 +35,7 @@ export function Cart(props) {
                             <div>
                                 <div className="delivery-group">
                                     <input type="radio" className="cart-radio"></input>
-                                    <img className="delivery-img" src={require('../image/cart/cart-icon-1.png')}></img>
+                                    <img className="delivery-img" src={require('../../image/cart/cart-icon-1.png')}></img>
                                     <div className="delivery-description">Самовывоз (бесплатно)</div>        
                                 </div>
                                 <p className="delivery-description_text">Удобный, бесплатный и быстрый способ получения заказа</p>
@@ -46,7 +46,7 @@ export function Cart(props) {
                         <div className="delivery-block">
                             <div className="delivery-group">
                                 <input type="radio" className="cart-radio"></input>
-                                <img className="delivery-img" src={require('../image/cart/cart-icon-2.png')}></img>
+                                <img className="delivery-img" src={require('../../image/cart/cart-icon-2.png')}></img>
                                 <div className="delivery-description"> Курьерская доставка по Москве (бесплатно)</div>
                             </div>
                         </div>
@@ -55,7 +55,7 @@ export function Cart(props) {
                             <div>
                                 <div className="delivery-group">
                                     <input type="radio" className="cart-radio"></input>
-                                    <img className="delivery-img" src={require('../image/cart/cart-icon-3.png')}></img>
+                                    <img className="delivery-img" src={require('../../image/cart/cart-icon-3.png')}></img>
                                     <div className="delivery-description">Квитанция, к оплате</div> 
                                 </div>
                                 <p className="delivery-description_text">Вы можете распечатать квитанцию и оплатить её в любом 

@@ -39,7 +39,7 @@
 }
 .pupup-btn::before{
     content: '';
-    background-image: url('../image/cart-button.png');
+    background-image: url('../../image/cart-button.png');
     width: 40px;
     height: 40px;
     position: absolute;

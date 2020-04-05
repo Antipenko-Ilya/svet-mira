@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import qs from 'query-string';
-import Card from './Card';
+import Card from '../Card/Card';
 import { Filters } from '../Filter/Filters';
 import './Content.css';
 
@@ -103,7 +103,7 @@ export function Content({ match }) {
     // ?priceFrom=30000&priceTo=40000&brand=Preciosa
 
     async function loadData(filters) {
-        const data = await fetch(`http://5.101.51.45/goods`).then(r => r.json());
+        const data = await fetch(`http://localhost:5469/goods`).then(r => console.log('sssss', r.json()));
         setCards(data);
     }
 

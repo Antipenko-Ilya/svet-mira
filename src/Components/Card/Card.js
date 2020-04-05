@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { addToBasket } from '../redux/basket/actions';
+import { addToBasket } from '../../redux/basket/actions';
 import './Card.css';
 
 export default function Card(props) {
