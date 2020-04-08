@@ -5,16 +5,19 @@
     flex-direction: column;
     margin-bottom: 55px;
 }
+.supplier-title {
+    font-size: 35px;
+}
 .supplier-img_wrap {
     display: flex;
     margin-top: 20px;
-    width: 60%;
-    justify-content: space-evenly;
+    width: 80%;
+    justify-content: space-around;
 }
 .supplier-img {
     cursor: pointer;
-    transition: .2s;
+    transition: .3s;
 }
 .supplier-img:hover {
-    transform: scale(1.1);
+    transform: scale(1.3);
 }

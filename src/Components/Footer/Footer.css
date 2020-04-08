@@ -1,15 +1,43 @@
 .footer{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #4B648B;
 }
 .footer-wrap {
+    width: 80%;
     display: flex;
     padding-top: 20px;
-    justify-content: space-evenly;
+    padding-bottom: 20px;
+    justify-content: space-between;
     align-items: flex-start;
-    background-color: #4B648B;
     color: #fff;
+}
+.about {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.catalog {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.contact {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 }
 .footer-title {
     color: #fff;
+    text-align: center;
+    font-size: 24px;
+}
+.footer-link {
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+.footer-link:hover {
+    border-bottom: 1px solid #fff;
 }

@@ -2,5 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+}
+.preview-img {
+    width: 80%;
+    border-radius: 15px;
 }

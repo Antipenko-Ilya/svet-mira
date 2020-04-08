@@ -95,7 +95,7 @@ const saleCard = [
 
 export function Sale() {
     return(
-        <div  className="sale-wrap">
+        <div id="sale" className="sale-wrap">
             <div className="sale">
                 <h2 className="sale-title">Акционные товары</h2>
                 <div className="sale-content">

@@ -4,7 +4,7 @@ import "./Preview.css"
 
 export function Preview() {
     return(
-        <div className="preview">
+        <div id="preview" className="preview">
            <img className="preview-img" src={require("../../image/Preview-bg.png")} alt="preview"></img>
            <div></div>
         </div>

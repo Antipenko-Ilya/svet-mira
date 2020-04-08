@@ -7,26 +7,26 @@ export function Footer(props) {
             <div className="footer-wrap">
                 <div className="about">
                     <h3 className="footer-title">О магазине</h3>
-                    <p>Главная</p>
-                    <p>Доставка и оплата</p>
-                    <p>Бренды</p>
-                    <p>Контакты</p>
+                    <span className="footer-link">Главная</span>
+                    <span className="footer-link">Доставка и оплата</span>
+                    <span className="footer-link">Бренды</span>
+                    <span className="footer-link">Контакты</span>
                 </div>
                 <div className="catalog">
                     <h3 className="footer-title">Каталог</h3>
-                    <p>Люстры</p>
-                    <p>Большие люстры</p>
-                    <p>Бра</p>
-                    <p>Настольные лампы и Торшеры</p>
-                    <p>Комплектующие</p>
+                    <span className="footer-link">Люстры</span>
+                    <span className="footer-link">Большие люстры</span>
+                    <span className="footer-link">Бра</span>
+                    <span className="footer-link">Настольные лампы и Торшеры</span>
+                    <span className="footer-link">Комплектующие</span>
                 </div>
                 <div className="contact">
                     <h3 className="footer-title">Контакты</h3>
-                    <p>+7 (963) 776-10-21</p>
-                    <p>+7 (926) 732-96-35</p>
-                    <p>svetilnikvdom@yandex.ru</p>
-                    <p>Пн–Сб   09:00–20:00</p>
-                    <p>Вс      09:00–17:00</p>
+                    <span className="footer-link">+7 (963) 776-10-21</span>
+                    <span className="footer-link">+7 (926) 732-96-35</span>
+                    <span className="footer-link">svetilnikvdom@yandex.ru</span>
+                    <span className="footer-link">Пн–Сб   09:00–20:00</span>
+                    <span className="footer-link">Вс      09:00–17:00</span>
                 </div>
             </div>
             <div className="footer-map">
